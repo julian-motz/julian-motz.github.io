@@ -19,10 +19,13 @@ export const Navbar = () => {
               About Me
             </a>
             <a href="#responsive-header" className="p-2 block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
-              Examples
+              Services
+            </a>
+            <a href="#responsive-header" className="p-2 block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
+              Experience
             </a>
             <a href="#responsive-header" className="p-2 block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white">
-              Blog
+              Contact
             </a>
           </div>
         </div>
