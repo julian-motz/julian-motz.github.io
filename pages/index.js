@@ -5,6 +5,7 @@ import { Welcome, Welcome2 } from '../components/Welcome';
 import { Services } from '../components/Services'
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { Experience } from '../components/Experience';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
-      <Parallax pages={3} style={{ top: '0', left: '0', backgroundColor: '#f1f5f9' }}>
+      <Parallax pages={4} style={{ top: '0', left: '0', backgroundColor: '#f1f5f9' }}>
         <ParallaxLayer
           offset={0}
           speed={0}
@@ -29,13 +30,20 @@ export default function Home() {
 
         <ParallaxLayer
           offset={1}
-          speed={2.5}
+          speed={0.5}
           >
           <Services/>
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={2}
+          speed={0.5}
+          >
+          <Experience/>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={3}
           speed={2.5}
           style={{
             display: 'flex',
